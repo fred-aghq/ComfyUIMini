@@ -1,0 +1,9 @@
+services:
+  comfymini:
+    build:
+      context: .
+    volumes:
+      - ./config:/home/node/app/config
+      - ./output:/home/node/output
+    ports:
+      - "8888:3000"
